@@ -8,7 +8,7 @@ set -e
 . ./build.sh
 
 # Build the image
-docker push jlgrock/centos-oraclejdk:$CENTOS-$JDK
+docker push jlgrock/centos-openjdk:$CENTOS-$JDK
 
 if [ $? -eq 0 ]; then
     echo "Image Successfully Published with tag $CENTOS-$JDK"
