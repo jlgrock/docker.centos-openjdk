@@ -12,7 +12,10 @@ RUN yum -y update  && \
 	yum install -y java-1.8.0-openjdk-${JAVA_VERSION} \
 		java-1.8.0-openjdk-devel-${JAVA_VERSION} \
 		tar \
-		gzip
+		gzip \
+		zip \
+		unzip \
+		cat
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk/
 
